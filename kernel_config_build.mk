@@ -1,6 +1,6 @@
 
 
-DEVICE_PRODUCT_PATH := device/khadas/s4vim
+DEVICE_PRODUCT_PATH := device/khadas/g12vim
 
 
 KERNEL_ROOTDIR := common

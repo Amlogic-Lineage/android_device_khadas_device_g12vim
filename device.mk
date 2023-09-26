@@ -132,7 +132,7 @@ $(call inherit-product, frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap
 #PRODUCT_COPY_FILES += \
 #    frameworks/native/data/etc/android.software.picture_in_picture.xml:vendor/etc/permissions/android.software.picture_in_picture.xml
 
-$(call inherit-product, device/khadas/common/products/mbox/s4/device.mk)
+$(call inherit-product, device/khadas/common/products/mbox/g12a/device.mk)
 
 #Dolby MS12 2.4 Decryption
 include device/khadas/common/dolby_ms12/dolby_ms12.mk

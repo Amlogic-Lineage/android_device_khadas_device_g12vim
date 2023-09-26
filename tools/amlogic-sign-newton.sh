@@ -1,6 +1,6 @@
 #!/bin/bash
 
-readonly oppenDIR=device/khadas/s4vim
+readonly oppenDIR=device/khadas/g12vim
 readonly TOOLS_DIR="$NEWTONDIR"/tools
 readonly KEY_DIR="$oppenDIR"/recovery/releasetools/keys
 readonly DEVICE_DIR="$oppenDIR"/upgrade

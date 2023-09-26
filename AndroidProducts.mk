@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/s4vim.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/g12vim.mk
 COMMON_LUNCH_CHOICES := \
-    s4vim-eng \
-    s4vim-user \
-    s4vim-userdebug
+    g12vim-eng \
+    g12vim-user \
+    g12vim-userdebug

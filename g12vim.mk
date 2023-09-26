@@ -24,11 +24,11 @@ endif
 BOARD_COMPILE_ATV := false
 BOARD_COMPILE_CTS := false
 BOARD_PLAYREADY_LEVEL := 1
-PRODUCT_DIR := s4vim
-#$(shell python device/khadas/s4vim/auto_generator.py preinstall)
-#-include device/khadas/s4vim/preinstall/preinstall.mk
+PRODUCT_DIR := g12vim
+#$(shell python device/khadas/g12vim/auto_generator.py preinstall)
+#-include device/khadas/g12vim/preinstall/preinstall.mk
 #PRODUCT_COPY_FILES += \
-#    device/khadas/s4vim/preinstall/preinstall.sh:system/bin/preinstall.sh
+#    device/khadas/g12vim/preinstall/preinstall.sh:system/bin/preinstall.sh
 
 #CONFIG_DEVICE_LOW_RAM := true
 ifeq ($(CONFIG_DEVICE_LOW_RAM),true)
@@ -140,7 +140,7 @@ ifeq ($(TARGET_BUILD_LIVETV),true)
 PRODUCT_PACKAGES += \
     droidlogic.tv.software.core.xml
 
-#S4VIM app
+#G12VIM app
 PRODUCT_PACKAGES += \
     FactoryTest \
     SchPwrOnOff \
@@ -153,8 +153,8 @@ ifeq ($(BUILD_WITH_GAPPS_CONFIG),true)
 else
 PRODUCT_PACKAGES += TTS
 PRODUCT_COPY_FILES += \
-	device/khadas/s4vim/TTS_so/libtts_android.so:system/lib64/libtts_android.so \
-	device/khadas/s4vim/TTS_so/libtts_android_neon.so:system/lib64/libtts_android_neon.so
+	device/khadas/g12vim/TTS_so/libtts_android.so:system/lib64/libtts_android.so \
+	device/khadas/g12vim/TTS_so/libtts_android_neon.so:system/lib64/libtts_android_neon.so
 endif
 #dvbstack
 BOARD_HAS_ADTV := true
@@ -240,7 +240,7 @@ PRODUCT_MODEL := $(TARGET_PRODUCT)
 PRODUCT_MANUFACTURER := Droidlogic
 
 PRODUCT_PROPERTY_OVERRIDES += \
-        ro.build.display.id=s4vim-android11-64bit-v$(shell date +%y%m%d)
+        ro.build.display.id=g12vim-android11-64bit-v$(shell date +%y%m%d)
 PRODUCT_TYPE := mbox
 # Non updatable APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
@@ -432,7 +432,7 @@ $(call inherit-product, device/khadas/common/media.mk)
 
 include device/khadas/common/gpu/dvalin-user-arm64.mk
 
-include device/khadas/common/products/mbox/s4/s4.mk
+include device/khadas/common/products/mbox/g12a/g12a.mk
 #########################################################################
 #
 ##                                     Auto Patch

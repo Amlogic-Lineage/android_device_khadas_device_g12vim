@@ -8,10 +8,10 @@ EXTRA_CMDS=''
 #It is a must to set GPU driver's version
 GPU_DRV_VERSION=r25p0
 
-KERNEL_DEVICETREE=s4vim
+KERNEL_DEVICETREE=g12a_s905y2_radxa0
 DTBO_DEVICETREE=android_overlay_dt
-PRODUCT_DIRNAME=device/khadas/s4vim
-BOARD_DEVICENAME=s4vim
+PRODUCT_DIRNAME=device/khadas/g12vim
+BOARD_DEVICENAME=g12vim
 
 ENABLE_KASAN=false
 
@@ -30,4 +30,4 @@ device/khadas/common/dolby_ms12/kmod
 
 STOP_SHIP_TRACEPRINTK=1
 
-BOARD_REMOVE_CONFIG=meson64_a64_s4_remove_config
+BOARD_REMOVE_CONFIG=meson64_a64_g12_remove_config

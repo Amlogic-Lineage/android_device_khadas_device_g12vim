@@ -19,4 +19,4 @@ PRODUCT_BRAND := Amlogic
 
 ATV_LAUNCHER := amati
 
-$(call inherit-product, device/khadas/s4vim/s4vim.mk)
+$(call inherit-product, device/khadas/g12vim/g12vim.mk)
